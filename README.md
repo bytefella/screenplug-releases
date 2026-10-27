@@ -41,6 +41,9 @@ Docking your laptop usually means the same chores: keep the Mac awake, open your
 2. Drag **Screen Plug** to Applications and launch it. It lives in the menu bar.
 3. Connect a display. A profile is created automatically; open **Settings…** to configure it.
 
+> [!NOTE]
+> Current releases are not notarized yet, so macOS Gatekeeper will block the first launch. To allow it, open **System Settings → Privacy & Security**, scroll to the message about Screen Plug and click **Open Anyway** (or right-click the app and choose **Open**). This will change once Screen Plug is officially released.
+
 A 7-day trial starts on first run. Screen Plug is licensed per Mac.
 
 <br>
