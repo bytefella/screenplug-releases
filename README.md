@@ -28,9 +28,11 @@ Docking your laptop usually means the same chores: keep the Mac awake, open your
 | ☕ **Keep awake** | Hold the Mac awake only while a chosen display is connected. |
 | 🌙 **Dim built-in display** | Turn the laptop screen off while an external one is in use, and back on when you unplug. |
 | ⚡ **Connect & disconnect actions** | Launch or quit apps, run Shortcuts, run shell commands, switch audio output or input. |
+| 🪟 **Open apps on a chosen display** | Pick which screen a launched app opens on (needs Accessibility access). |
+| 🔀 **Multiple displays** | Every connected screen gets its profile, and actions run for a screen even when another one is the active display. |
 | 🔔 **Connect notifications** | See at a glance what was applied and whether anything failed. |
 | 🛟 **Safety net** | Several independent paths bring the built-in display back, so you never get stuck with a black screen. |
-| 📱 **Sidecar aware** | iPad Sidecar (AirPlay) gets its own profile. |
+| 📱 **Sidecar & AirPlay aware** | An iPad used as Sidecar never dims your built-in screen. AirPlay displays work like any external monitor. |
 | 🔄 **Self-updating** | Updates install in place after you confirm. |
 
 <br>
@@ -73,7 +75,7 @@ Everything you need is one click away. The menu shows the version, the active pr
 
 ## 🖥️ Display profiles
 
-Every display you connect appears in the Settings sidebar, with a green dot on the one that is active right now.
+Every display you connect appears in the Settings sidebar. A green dot marks each display that is connected right now.
 
 <table>
 <tr>
@@ -84,10 +86,11 @@ Every display you connect appears in the Settings sidebar, with a green dot on t
 
 Per profile you can set:
 
-- **Name** and **Icon**: how the display appears in the sidebar, menu and notifications
+- **Name**: how the display appears in the sidebar, menu and notifications. The icon is chosen automatically from the display type
 - **Keep system awake** and **Dim built-in display**
 - **Notify when this display connects**
-- **Actions**: launch app, quit app, run Shortcut, run shell command, audio output, audio input
+- **Actions**: launch app, quit app (picked from your Applications folder), run Shortcut, run shell command, audio output, audio input
+- **Open on**: for launched apps, choose the display the app's window opens on
 - **Delete**: the profile is created again the next time the display connects
 
 The **No Display** profile applies when no external monitor is connected.
@@ -101,7 +104,7 @@ The **No Display** profile applies when no external monitor is connected.
 
 Use an iPad as a second screen and it gets its own profile, with the same keep-awake and action options.
 
-Dimming the built-in display is deliberately unavailable for Sidecar, so you can't lose both screens.
+Dimming the built-in display is deliberately unavailable for Sidecar, so you can't lose both screens. AirPlay displays are different: they are treated as a normal external display.
 
 </td>
 </tr>
@@ -135,6 +138,7 @@ If an action fails, a separate notification says which one.
 
 - **Built-in Display**: current status, how it is dimmed, and a **Reset** button
 - **Notifications**: turn connect notifications on or off, send a test, and bring back ignored screens with **Notify again**
+- **Accessibility**: shows whether Screen Plug may move windows, which **Open on** needs, with a shortcut to the right System Settings page
 - **Safety Net**: reset hotkey and automatic timeout
 
 </td>
@@ -147,7 +151,7 @@ If an action fails, a separate notification says which one.
 
 Turning the built-in display off relies on an undocumented macOS feature. Screen Plug would rather turn your screen on once too often than leave it off, so any of these brings it back on its own:
 
-- Unplugging the external display, quitting Screen Plug, or Screen Plug restarting after a crash
+- Unplugging the external display, quitting Screen Plug, or Screen Plug restarting after a crash (dimming is applied again when the display is still connected)
 - No display being active at all
 - A helper process that acts if Screen Plug exits unexpectedly or stops responding
 - The **reset hotkey** (`⌃⌥⌘B` by default), which works with no screen visible
