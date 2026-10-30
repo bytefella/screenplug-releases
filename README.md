@@ -28,7 +28,7 @@ Docking your laptop usually means the same chores: keep the Mac awake, open your
 | ☕ **Keep awake** | Hold the Mac awake only while a chosen display is connected. |
 | 🌙 **Dim built-in display** | Turn the laptop screen off while an external one is in use, and back on when you unplug. |
 | ⚡ **Connect & disconnect actions** | Launch or quit apps, run Shortcuts, run shell commands, switch audio output or input. |
-| 🪟 **Open apps on a chosen display** | Pick which screen a launched app opens on (needs Accessibility access). |
+| 📍 **Open apps on a chosen display** | Pick which screen a launched app opens on (needs Accessibility access). |
 | 🔀 **Multiple displays** | Every connected screen gets its profile, and actions run for a screen even when another one is the active display. |
 | 🔔 **Connect notifications** | See at a glance what was applied and whether anything failed. |
 | 🛟 **Safety net** | Several independent paths bring the built-in display back, so you never get stuck with a black screen. |
@@ -95,7 +95,7 @@ Per profile you can set:
 
 The **No Display** profile applies when no external monitor is connected.
 
-### 🪟 Open apps on a chosen display
+### 📍 Open apps on a chosen display
 
 <table>
 <tr>
