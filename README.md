@@ -95,6 +95,25 @@ Per profile you can set:
 
 The **No Display** profile applies when no external monitor is connected.
 
+### 🪟 Open apps on a chosen display
+
+<table>
+<tr>
+<td valign="top">
+
+Launched apps can open exactly where you want them. Next to each **Launch app** action, the **Open on** menu lets you pick:
+
+- **Don't move**: the app opens wherever it puts itself
+- **Built-in Display**: handy for a mail or chat app you keep on the laptop screen
+- **This display**: the external monitor the profile belongs to
+
+Moving windows needs Accessibility access. **Settings → General** shows whether it is on and links to the right System Settings page. Until it is allowed, apps open where they put themselves.
+
+</td>
+<td width="380" valign="top"><img src="assets/move_to_screen_on_connect.png" alt="Open on menu for a launch app action" width="360"></td>
+</tr>
+</table>
+
 ### 📱 Sidecar
 
 <table>
