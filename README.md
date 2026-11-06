@@ -43,7 +43,7 @@ Docking your laptop usually means the same chores: keep the Mac awake, open your
 3. Connect a display. A profile is created automatically; open **Settings…** to configure it.
 
 > [!NOTE]
-> Current releases are not notarized yet, so macOS Gatekeeper will block the first launch. To allow it, open **System Settings → Privacy & Security**, scroll to the message about Screen Plug and click **Open Anyway** (or right-click the app and choose **Open**). This will change once Screen Plug is officially released.
+> Releases up to 0.7.0 are not notarized, so macOS Gatekeeper blocks their first launch. To allow it, open **System Settings → Privacy & Security**, scroll to the message about Screen Plug and click **Open Anyway** (or right-click the app and choose **Open**). Version 0.7.1 and later are notarized and open normally.
 
 Screen Plug is **free to use**: no license key, no trial, no account.
 
